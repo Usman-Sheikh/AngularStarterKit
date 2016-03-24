@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+</head>
+<body ng-app="eventsApp">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="navbar-brand">Angular Starter Kit</div>
+            <ul class="nav nav-tabs">
+                <li class="{{active}}"><a href="#/Home">Home</a></li>
+                <li class="{{active}}"><a href="#/Products">Products</a></li>
+                <li class="{{active}}"><a href="#/Contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <ng-view></ng-view>
+      
+    </div>
+    
+
+    <!-- Library Scripts -->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+    <!-- Services -->
+
+    
+    <!-- Product Controllers -->
+    <script src="Controllers/HomeController.js"></script>
+     <script src="Controllers/ProductsController.js"></script>
+    <script src="Controllers/ContactController.js"></script>
+
+</body>
+</html>

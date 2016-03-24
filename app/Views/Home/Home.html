@@ -1,0 +1,25 @@
+﻿<div>
+
+    <img ng-src="{{event.imageUrl}}" alt="{{event.name}}" />
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div><strong>Date:</strong>{{event.date}}</div>
+            <div><strong>Time:</strong>{{event.time}}</div>
+        </div>
+
+
+
+
+
+        <div class="col-md-4">
+            <address>
+                <strong>Address:</strong>
+                {{event.location.address}}<br />
+                {{event.location.city}},
+                {{event.location.province}}
+            </address>
+        </div>
+    </div>
+</div>
